@@ -29,7 +29,13 @@ class Bus:
     @property
     def bus_id(self):
         """
-        To Do: Add a docstring.
+        Get the bus ID of the instance.
+
+        This property provides read-only access to the private `__bus_id` attribute,
+        which uniquely identifies a bus in the system.
+
+        Returns:
+            int: The value of the `__bus_id` attribute.
         """
         return self.__bus_id
 
@@ -54,6 +60,10 @@ class Bus:
 
     def __str__(self):
         """
-        To do: Add a docstring.
+        Returns a human-readable representation of the bus, 
+        including its ID, capacity, and model, formatted as a string.
+
+        Returns:
+            str: A formatted string containing the bus ID, capacity, and model.
         """
         return f"Bus ID: {self.__bus_id}, Capacity: {self.__capacity}, Model: {self.__model}"

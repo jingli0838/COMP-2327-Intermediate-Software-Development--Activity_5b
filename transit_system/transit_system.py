@@ -25,8 +25,13 @@ class TransitSystem:
     @property
     def name(self):
         """
-        To do: Add a docstring.
-        """
+        Returns the value of the private `__name` attribute, 
+        which represents the name of the object.
+
+        Returns:
+            str: The name of the object.
+        """   
+        
         return self.__name
 
     @property
